@@ -12,3 +12,6 @@ def visualize_image():
     st.write('Visualiser')
 
     version = 'v1'
+
+    average_parasite =
+    average_healthy =
