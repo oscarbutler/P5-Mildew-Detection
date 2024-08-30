@@ -18,17 +18,23 @@ In the start of data collection it is crucial to install kaggle. It is important
 
 ## Technology Used
 
+- Gitpod
+
+- Github is used to store the repository and to show the files and progression of the workspace.
+
+- Heroku
+
 - Numpy
 
 - Pandas
 
-- Matplotlib
+- Matplotlib is used for visualising and plotting data.
 
 - Tensorflow
 
 - Seaborn
 
-- Streamlit
+- Streamlit is used to create web apps that are interactive.
 
 - Joblib
 
