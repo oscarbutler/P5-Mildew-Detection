@@ -8,6 +8,13 @@ In the start of data collection it is crucial to install kaggle. It is important
 
 ## Modelling and evaluating
 
+Train - healthy: 1472 images
+Train - powdery_mildew: 1472 images
+Validation - healthy: 210 images
+Validation - powdery_mildew: 210 images
+Test - healthy: 422 images
+Test - powdery_mildew: 422 images
+
 ## Business Requirements
 
 - The client wants to be able to visualise the difference between the healthy and powdered mildew leaves.
