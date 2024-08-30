@@ -15,3 +15,5 @@ In the start of data collection it is crucial to install kaggle. It is important
 - There should also be a prediction on whether a leaf is healthy or has got powdered mildew.
 
 - It also needs to have a working dashboard.
+
+## Technology Used
