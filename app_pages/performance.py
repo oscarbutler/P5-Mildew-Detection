@@ -6,3 +6,4 @@ from src.evaluate import load_test_evaluation
 
 
 def performance_function():
+    version = v1
