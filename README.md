@@ -29,3 +29,7 @@ In the start of data collection it is crucial to install kaggle. It is important
 - Seaborn
 
 - Streamlit
+
+- Joblib
+
+- Pil
