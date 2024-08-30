@@ -22,7 +22,7 @@ In the start of data collection it is crucial to install kaggle. It is important
 
 - Github is used to store the repository and to show the files and progression of the workspace.
 
-- Heroku
+- Heroku allowa us to deploy the web application.
 
 - Numpy
 
@@ -30,7 +30,7 @@ In the start of data collection it is crucial to install kaggle. It is important
 
 - Matplotlib is used for visualising and plotting data.
 
-- Tensorflow
+- Tensorflow is a open source machine learning platform that lets us build and train the machine.
 
 - Seaborn
 
