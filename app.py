@@ -16,3 +16,5 @@ app.add_page("Visualiser", visualize_image)
 app.add_page("Performance", performance_function)
 app.add_page("Summary", summary_function)
 app.add_page("Prediction", detector)
+
+app.run()
