@@ -17,3 +17,15 @@ In the start of data collection it is crucial to install kaggle. It is important
 - It also needs to have a working dashboard.
 
 ## Technology Used
+
+- Numpy
+
+- Pandas
+
+- Matplotlib
+
+- Tensorflow
+
+- Seaborn
+
+- Streamlit
