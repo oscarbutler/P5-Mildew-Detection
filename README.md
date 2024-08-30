@@ -7,3 +7,5 @@ In the start of data collection it is crucial to install kaggle. It is important
 ## Data Visualisation
 
 ## Modelling and evaluating
+
+## Business Requirements
