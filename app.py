@@ -1,10 +1,10 @@
 
 import streamlit as st
 from app_pages.multipage import MultiPage
-# st.set_page_config(
-#     page_title="Mildew Detection",
-#     page_icon="🖥️"
-# )
+st.set_page_config(
+    page_title="Mildew Detection",
+    page_icon="🖥️"
+)
 from app_pages.visualiser import visualize_image
 from app_pages.performance import performance_function
 from app_pages.prediction import detector
