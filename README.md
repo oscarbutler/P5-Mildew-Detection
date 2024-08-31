@@ -34,27 +34,29 @@ and make accurate predictions.
 
 ## Technology Used
 
-- Gitpod
+- Python
+
+- Gitpod was used in order to create and develop the workspace that I have worked on.
 
 - Github is used to store the repository and to show the files and progression of the workspace.
 
-- Heroku allowa us to deploy the web application.
+- Heroku allows us to deploy the web application.
 
-- Numpy
+- Numpy is an open source which allows the user to work with arrays, it is very efficient and a vital part in this project.
 
-- Pandas
+- Pandas is also an open source that allows the user to work with the datasets. Using pandas gives the ability to analyze, clean and explore the data.
 
 - Matplotlib is used for visualising and plotting data.
 
 - Tensorflow is a open source machine learning platform that lets us build and train the machine.
 
-- Seaborn
+- Seaborn is a visualisation tool that works with matplotlib. It can be used for statistical uses.
 
 - Streamlit is used to create web apps that are interactive.
 
-- Joblib
+- Joblib is a tool to help with efficiency especially with arrays.
 
-- Pil
+- Pil helps us open and manipulate images. It is an open source library for python.
 
 ## Bugs
 
