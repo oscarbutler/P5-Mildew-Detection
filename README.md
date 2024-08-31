@@ -6,7 +6,15 @@ In the start of data collection it is crucial to install kaggle. It is important
 
 ## Data Visualisation
 
+In data visualisation it should show a clear difference between the healthy leaves and leaves affected by the powdery mildew.
+There are going to be a figure showing the average healthy leaf and powdery mildew leaf.
+
 ## Modelling and evaluating
+
+In modelling and evaluating we are going to make a prediction on whether the leaf image is healthy or not. In order to do this
+we are going to be building several figures. To start by augmenting the image data in the test, training and validation image sets. After that building a CNN model is vital in the devleopment of this project
+
+## Amount of Images
 
 Train - healthy: 1472 images
 Train - powdery_mildew: 1472 images
@@ -21,7 +29,8 @@ Test - powdery_mildew: 422 images
 
 - There should also be a prediction on whether a leaf is healthy or has got powdered mildew.
 
-- It also needs to have a working dashboard.
+- It also needs to have a working dashboard. This must be interactive and allow the user to upload multiple images
+and make accurate predictions.
 
 ## Technology Used
 
