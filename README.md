@@ -59,3 +59,5 @@ and make accurate predictions.
 ## Bugs
 
 - A bug that I encountered was that the slug size was too large for heroku to handle, because of this I added the healthy, powdery mildew, train and test image sets. As well as moving image sets to slugignore I also reduced the image size to ensure that the slug size did not reach the maximum cap.
+
+- The python version that was originally in use was not compatible with heroku so I had to update it to 3.9.15, which then proved to be successful.
