@@ -13,9 +13,9 @@ def detector():
 
     image_input = st.file_uploader('Upload Image of Leaf', type='PNG', accept_multiple_files=True)
 
-    if images_buffer is not None:
+    if image_input is not None:
         df_report = pd.DataFrame([])
-        for image in images_buffer:
+        for image in image_input:
 
             img_pil = (Image.open(image))
             st.info(f"Leaf sample: **{image.name}**")
