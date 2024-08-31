@@ -13,3 +13,10 @@ def plot_probabilities(probability, prediction_class):
         index={'Parasitised': 0, 'Uninfected': 1}.keys(),
         columns=['Probability']
     )
+    
+    prob_per_class.loc[prediction_class] = probability
+    for x in prob_per_class.index.to_list():
+        if x not in prediction_class:
+            prob_per_class.loc[x] = 1 - probability
+    prob_per_class = prob_per_class.round(3)
+    prob_per_class['Diagnostic'] = prob_per_class.index
