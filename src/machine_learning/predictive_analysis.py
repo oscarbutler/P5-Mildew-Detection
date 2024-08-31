@@ -27,3 +27,5 @@ def plot_probabilities(probability, prediction_class):
         range_y=[0, 1],
         width=600, height=300, template='seaborn')
     st.plotly_chart(fig)
+
+def resize_input_image(img, version):
