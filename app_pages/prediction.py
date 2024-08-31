@@ -29,3 +29,8 @@ def detector():
 
             df_report = df_report.append({"Name":image.name, 'Result': prediction_class },
                                         ignore_index=True)
+
+        if not df_report.empty:
+            st.success("Analysis Report")
+            st.table(df_report)
+            st.markdown(download_dataframe_as_csv(df_report), unsafe_allow_html=True)
