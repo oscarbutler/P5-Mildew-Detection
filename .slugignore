@@ -1,4 +1,4 @@
 /inputs/cherry-leaves/train
 /inputs/cherry-leaves/test
-/inputs/healthy
-/inputs/powdery_mildew
+/inputs/cherry-leaves/healthy
+/inputs/cherry-leaves/powdery_mildew
