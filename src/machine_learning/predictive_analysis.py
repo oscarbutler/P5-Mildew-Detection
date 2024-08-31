@@ -5,3 +5,5 @@ import plotly.express as px
 from tensorflow.keras.models import load_model
 from PIL import Image
 from src.data_management import load_pkl_file
+
+def plot_probabilities(probability, prediction_class):
