@@ -63,3 +63,5 @@ and make accurate predictions.
 - The python version that was originally in use was not compatible with heroku so I had to update it to 3.9.15, which then proved to be successful.
 
 ## Credits
+
+- I used code I learnt from the [Code Institute Malaria Walkthrough Project](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/07a3964f7a72407ea3e073542a2955bd/29ae4b4c67ed45a8a97bb9f4dcfa714b/) this helped me significantly as I then used the knowledge I received to make this powdery mildew detector.
