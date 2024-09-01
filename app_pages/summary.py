@@ -2,7 +2,7 @@ import streamlit as st
 
 def summary_function():
 
-    st.info("Summary")
+    st.title("Summary")
 
     st.info(
         f"Powdery mildew is a parasitic fungal disease caused by various species. "

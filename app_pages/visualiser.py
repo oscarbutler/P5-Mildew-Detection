@@ -9,7 +9,7 @@ import itertools
 import random
 
 def visualize_image():
-    st.write('Visualiser')
+    st.title('Visualiser')
 
     version = 'v1'
 

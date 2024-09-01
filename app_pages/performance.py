@@ -6,6 +6,9 @@ from src.evaluate import load_test_evaluation
 
 
 def performance_function():
+
+    st.title("Performance")
+
     version = 'v1'
     labels_distribution = plt.imread(f"outputs/{version}/labels_img_distribution.png")
 

@@ -11,6 +11,8 @@ from src.machine_learning.predictive_analysis import (
 
 def detector():
 
+    st.title("Detector")
+
     image_input = st.file_uploader('Upload Image of Leaf', type='PNG', accept_multiple_files=True)
 
     if image_input is not None:
