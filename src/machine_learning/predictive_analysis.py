@@ -18,7 +18,7 @@ def plot_probabilities(probability, prediction_class):
     for x in prob_per_class.index.to_list():
         if x not in prediction_class:
             prob_per_class.loc[x] = 1 - probability
-    prob_per_class = prob_per_class.round(3)
+    prob_per_class = prob_per_class.round(2)
     prob_per_class['Diagnostic'] = prob_per_class.index
     fig = px.bar(
         prob_per_class,
