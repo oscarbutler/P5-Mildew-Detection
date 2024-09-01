@@ -25,7 +25,7 @@ def detector():
             version = 'v1'
             resized_img = resize_input_image(img=img_pil, version=version)
             probability, prediciton_class = model_and_predict(resized_img, version=version)
-            plot_predictions_probabilities(probability, prediction_class)
+            plot_probabilities(probability, prediction_class)
 
             df_report = df_report.append({"Name":image.name, 'Result': prediction_class },
                                         ignore_index=True)
