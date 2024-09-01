@@ -15,3 +15,6 @@ def visualize_image():
 
     average_parasite = plt.imread(f"outputs/{version}/avg_var_powdery_mildew.png")
     average_healthy = plt.imread(f"outputs/{version}/avg_var_healthy.png")
+
+    st.image(average_parasite, caption="")
+    st.image(average_healthy, caption="")
