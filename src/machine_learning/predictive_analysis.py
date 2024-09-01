@@ -50,6 +50,6 @@ def model_and_predict(my_image, version):
 
     st.write(
         f"The predictive analysis indicates the sample leaf is "
-        f"**{pred_class.lower()}**")
+        f"**{prediction_class.lower()}**")
 
     return probability, prediction_class
