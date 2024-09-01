@@ -14,7 +14,15 @@ There are going to be a figure showing the average healthy leaf and powdery mild
 In modelling and evaluating we are going to make a prediction on whether the leaf image is healthy or not. In order to do this
 we are going to be building several figures. To start by augmenting the image data in the test, training and validation image sets. After that building a CNN model is vital in the devleopment of this project
 
-## Amount of Images
+## Summary Page
+
+## Visualiser
+
+## Prediction
+
+## Hypothesis
+
+## Performance
 
 Train - healthy: 1472 images
 Train - powdery_mildew: 1472 images
