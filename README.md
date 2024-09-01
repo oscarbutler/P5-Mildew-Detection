@@ -16,6 +16,10 @@ we are going to be building several figures. To start by augmenting the image da
 
 ## Summary Page
 
+Powdery mildew is a parasitic fungal disease caused by various species. It affects a wide range of plants and infected plants and appears white.
+
+In the kaggle dataset that we collected there are 4208 images of a mixture of healthy leaves and one affected by powdery mildew.
+
 ## Visualiser
 
 ## Prediction
