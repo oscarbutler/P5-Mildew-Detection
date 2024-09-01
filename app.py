@@ -9,6 +9,7 @@ from app_pages.visualiser import visualize_image
 from app_pages.performance import performance_function
 from app_pages.prediction import detector
 from app_pages.summary import summary_function
+from app_pages.hypothesis import hypothesis_function
 
 app = MultiPage(app_name="Powdery Mildew Detector")
 
