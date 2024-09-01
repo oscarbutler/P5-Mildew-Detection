@@ -18,6 +18,10 @@ we are going to be building several figures. To start by augmenting the image da
 
 Powdery mildew is a parasitic fungal disease caused by various species. It affects a wide range of plants and infected plants and appears white.
 
+As the infection grows the white parts of the plant will continue to get larger and combine with each other.
+
+Powdery mildew is most infectious when in humid weather.
+
 In the kaggle dataset that we collected there are 4208 images of a mixture of healthy leaves and one affected by powdery mildew.
 
 ## Visualiser
