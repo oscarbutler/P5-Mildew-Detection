@@ -40,3 +40,9 @@ def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15,10)):
     images = os.listdir(dir_path+'/' + label_to_display)
     if nrows * ncols < len(images):
       img_index = random.sample(images, nrows * ncols)
+    else:
+      print(
+          f"Decrease nrows or ncols to create your montage. \n"
+          f"There are {len(images_list)} in your subset. "
+          f"You attempted to create a montage with {nrows * ncols} spaces")
+      return
