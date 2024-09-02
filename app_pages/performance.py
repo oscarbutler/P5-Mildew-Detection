@@ -23,3 +23,6 @@ def performance_function():
     st.success("train - healthy: 1472 images, train - powdery_mildew: 1472 images")
     st.success("validation - healthy: 210 images validation - powdery_mildew: 210 images")
     st.success("test - healthy: 422 images test - powdery_mildew: 422 images")
+
+    st.dataframe(pd.DataFrame(load_test_evaluation(
+        version), index=['Loss', 'Accuracy']))
