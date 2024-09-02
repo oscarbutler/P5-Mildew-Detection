@@ -49,6 +49,11 @@ def model_and_predict(my_image, version):
     if prediction_class == target_map[0]:
         probability = 1 - probability
 
+    if probability > 0.5:
+        prediction_class = "Healthy"
+    else:
+        prediction_class = "Powdery Mildew"
+
     st.write(
         f"The predictive analysis indicates the sample leaf is "
         f"**{prediction_class.lower()}**")
