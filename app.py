@@ -13,10 +13,10 @@ from app_pages.hypothesis import hypothesis_function
 
 app = MultiPage(app_name="Powdery Mildew Detector")
 
-app.add_page("Summary", summary_function)
-app.add_page("Visualiser", visualize_image)
-app.add_page("Prediction", detector)
-app.add_page("Hypothesis", hypothesis_function)
-app.add_page("Performance", performance_function)
+app.add_page("Project Summary", summary_function)
+app.add_page("Leaf Visualiser", visualize_image)
+app.add_page("Powdery Mildew Detection", detector)
+app.add_page("Project Hypothesis", hypothesis_function)
+app.add_page("ML Performance Metrics", performance_function)
 
 app.run()
