@@ -50,9 +50,9 @@ def model_and_predict(my_image, version):
         probability = 1 - probability
 
     if probability > 0.5:
-        prediction_class = "Healthy"
+        prediction_class = "healthy"
     else:
-        prediction_class = "Powdery Mildew"
+        prediction_class = "powdery_mildew"
 
     st.write(
         f"The predictive analysis indicates the sample leaf is "
