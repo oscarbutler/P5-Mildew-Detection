@@ -10,7 +10,7 @@ def plot_probabilities(probability, prediction_class):
 
     prob_per_class = pd.DataFrame(
         data=[0, 0],
-        index={'Healthy': 0, 'Powdery Mildew': 1}.keys(),
+        index={'Powdery Mildew': 0, 'Healthy': 1}.keys(),
         columns=['Probability']
     )
 
