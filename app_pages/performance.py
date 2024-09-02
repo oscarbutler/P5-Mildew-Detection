@@ -19,10 +19,10 @@ def performance_function():
     st.image(image_model_loss, caption="Model of losses")
     image_model_acc = plt.imread(f"outputs/{version}/model_acc.png")
     st.image(image_model_acc, caption="Model of accuracy")
-    st.info("In the dataset that we have received there are:") 
-    st.success("train - healthy: 1472 images, train - powdery_mildew: 1472 images")
-    st.success("validation - healthy: 210 images validation - powdery_mildew: 210 images")
-    st.success("test - healthy: 422 images test - powdery_mildew: 422 images")
+    st.info("In the dataset that we have received there are:"
+    f"train - healthy: 1472 images, train - powdery_mildew: 1472 images"
+    f"validation - healthy: 210 images validation - powdery_mildew: 210 images"
+    f"test - healthy: 422 images test - powdery_mildew: 422 images")
 
     st.dataframe(pd.DataFrame(load_test_evaluation(
         version), index=['Loss', 'Accuracy']))
