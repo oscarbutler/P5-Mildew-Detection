@@ -74,6 +74,18 @@ and make accurate predictions.
 
 - Pil helps us open and manipulate images. It is an open source library for python.
 
+## Wireframes
+
+![Summary Page](wireframes/summary.png)
+
+![Visualise Page](wireframes/visualise.png)
+
+![Predictor Page](wireframes/predictor.png)
+
+![Hypothesis Page](wireframes/hypothesis.png)
+
+![Performance Page](wireframes/performance.png)
+
 ## Bugs
 
 - A bug that I encountered was that the slug size was too large for heroku to handle, because of this I added the healthy, powdery mildew, train and test image sets. As well as moving image sets to slugignore I also reduced the image size to ensure that the slug size did not reach the maximum cap.
