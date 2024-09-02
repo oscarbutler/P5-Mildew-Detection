@@ -55,3 +55,10 @@ def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15,10)):
     for x in range(0,nrows*ncols):
       img = imread(dir_path + '/' + label_to_display + '/' + img_index[x])
       img_shape = img.shape
+      axes[plot_index[x][0], plot_index[x][1]].imshow(img)
+      axes[plot_index[x][0], plot_index[x][1]].set_title(f"Width {img_shape[1]}px x Height {img_shape[0]}px")
+      axes[plot_index[x][0], plot_index[x][1]].set_xticks([])
+      axes[plot_index[x][0], plot_index[x][1]].set_yticks([])
+    plt.tight_layout()
+    
+    st.pyplot(fig=fig)
