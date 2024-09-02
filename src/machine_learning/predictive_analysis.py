@@ -10,7 +10,7 @@ def plot_probabilities(probability, prediction_class):
 
     prob_per_class = pd.DataFrame(
         data=[0, 0],
-        index={'powdery_mildew': 0, 'healthy': 1}.keys(),
+        index={'healthy': 0, 'powdery_mildew': 1}.keys(),
         columns=['Probability']
     )
 
@@ -43,7 +43,7 @@ def model_and_predict(my_image, version):
 
     probability = model.predict(my_image)[0, 0]
 
-    target_map = {v: k for k, v in {'powdery_mildew': 0, 'healthy': 1}.items()}
+    target_map = {v: k for k, v in {'Healthy': 0, 'Powdery_mildew': 1}.items()}
     prediction_class = target_map[probability > 0.5]
     if prediction_class == target_map[0]:
         probability = 1 - probability
