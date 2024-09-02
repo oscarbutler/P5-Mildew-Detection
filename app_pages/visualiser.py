@@ -50,3 +50,8 @@ def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15,10)):
     list_of_rows= range(0,nrows)
     list_of_cols= range(0,ncols)
     plot_index = list(itertools.product(list_of_rows,list_of_cols))
+
+    fig, axes = plt.subplots(nrows=nrows,ncols=ncols, figsize=figsize)
+    for x in range(0,nrows*ncols):
+      img = imread(dir_path + '/' + label_to_display + '/' + img_index[x])
+      img_shape = img.shape
