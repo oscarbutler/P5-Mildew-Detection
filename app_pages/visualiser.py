@@ -23,4 +23,10 @@ def visualize_image():
     st.image(average_healthy, caption="Averages Of Healthy Leaves")
     st.image(average_difference, caption="The average difference")
 
+
+    if st.checkbox("Image Montage"): 
+      cherry_leaves_dir = 'inputs/cherry-leaves'
+      labels = os.listdir(cherry_leaves_dir+ '/validation')
+      label_to_display = st.selectbox(label="Select label", options=labels, index=0)
+
 def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15,10)):
