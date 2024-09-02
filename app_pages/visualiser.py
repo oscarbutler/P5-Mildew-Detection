@@ -46,3 +46,7 @@ def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15,10)):
           f"There are {len(images_list)} in your subset. "
           f"You attempted to create a montage with {nrows * ncols} spaces")
       return
+
+    list_of_rows= range(0,nrows)
+    list_of_cols= range(0,ncols)
+    plot_index = list(itertools.product(list_of_rows,list_of_cols))
