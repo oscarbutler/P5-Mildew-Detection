@@ -92,7 +92,9 @@ and make accurate predictions.
 
 - Pil helps us open and manipulate images. It is an open source library for python.
 
-## Wireframes
+## Dashboard Design
+
+### Wireframes
 
 ![Summary Page](wireframes/summary.png)
 
