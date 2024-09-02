@@ -28,5 +28,9 @@ def visualize_image():
       cherry_leaves_dir = 'inputs/cherry-leaves'
       labels = os.listdir(cherry_leaves_dir+ '/validation')
       label_to_display = st.selectbox(label="Select label", options=labels, index=0)
+      if st.button("Create The Montage"):      
+        image_montage(dir_path= cherry_leaves_dir + '/validation',
+                      label_to_display=label_to_display,
+                      nrows=6, ncols=3, figsize=(10,20))
 
 def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15,10)):
