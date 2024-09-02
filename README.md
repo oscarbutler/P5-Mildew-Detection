@@ -26,7 +26,25 @@ In the kaggle dataset that we collected there are 4208 images of a mixture of he
 
 ## Visualiser
 
+Business requirements:
+
+- Difference between average and variability image
+
+- Difference between average healthy and infected leaves
+
+- Image Montage
+
 ## Prediction
+
+Business requirements:
+
+- Link to download a set of healthy and powdery mildew leaves images for prediction.
+
+- A file uploader widget. The widget should allow multiple images to be uploaded. This will allow the for a prediction to be made with the this image.
+
+- Table with the image name and prediction results.
+
+- Download button for table.
 
 ## Hypothesis
 
