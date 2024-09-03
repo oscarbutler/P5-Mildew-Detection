@@ -37,14 +37,16 @@ def resize_input_image(img, version):
     return my_image
 
 def model_and_predict(my_image, version):
-    model = load_model(f"outputs/{version}/Mildew_Detection_Model.h5")
+
+    model = load_model(
+        f"outputs/v1/Mildew_Detection_Model.h5")
 
     probability = model.predict(my_image)[0, 0]
 
-    target_map = {0: 'healthy', 1: 'powdery_mildew'}
-    prediction_class = target_map[int(probability > 0.5)]
+    target_map = {v: k for k, v in {'healthy': 0, 'powdery_mildew': 1}.items()}
 
-    if prediction_class == 'healthy':
+    prediction_class = target_map[probability > 0.5]
+    if prediction_class == target_map[0]:
         probability = 1 - probability
 
     st.write(
