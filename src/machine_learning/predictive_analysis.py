@@ -43,13 +43,12 @@ def load_model_and_predict(my_image, version):
 
     pred_proba = model.predict(my_image)[0, 0]
 
-    target_map = {v: k for k, v in {'Uninfected': 0, 'Infected': 1}.items()}
-    pred_class = target_map[pred_proba > 0.5]
-    if pred_class == target_map[0]:
-        pred_proba = 1 - pred_proba
+    target_map = {0: 'Uninfected', 1: 'Infected'}
 
-    st.write(
-        f"The predictive analysis indicates the leaf sample is "
-        f"**{pred_class.lower()}** with mildew.")
+    if pred_proba > 0.5:
+        pred_class = target_map[1]
+    else:
+        pred_class = target_map[0]
+        pred_proba = 1 - pred_proba
 
     return pred_proba, pred_class
