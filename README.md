@@ -57,6 +57,14 @@ Business requirements:
 
 - Image Montage
 
+![Average Variability](images/avg_var.png)
+
+![Average Healthy And Powdery Mildew](images/avgs.png)
+
+![Healthy Leaf Montage](images/healthy_montage.png)
+
+![Powdery Mildew Montage](images/mildew_montage.png)
+
 ## Powdery Mildew Detection
 
 Business requirements:
