@@ -1,6 +1,7 @@
 import streamlit as st
+
 st.set_page_config(
-    page_title=self.app_name,
+    page_title="Cherry Leaves Mildew Detector",
     page_icon="🖥️")
             
 # Class to generate multiple Streamlit pages using an object oriented approach
