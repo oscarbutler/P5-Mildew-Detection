@@ -15,8 +15,8 @@ def detector():
 
     st.success(
         f"* You can download the dataset from kaggle, this contains the healthy and powdery mildew images."
-        f"These images can be downloaded from [kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves)"
-        f"Now they can be used for live predictions.")
+        f"These images can be downloaded from [kaggle.](https://www.kaggle.com/codeinstitute/cherry-leaves)"
+        f" Now they can be used for live predictions.")
 
     image_input = st.file_uploader('Upload Image of Leaf', type='PNG', accept_multiple_files=True)
 
