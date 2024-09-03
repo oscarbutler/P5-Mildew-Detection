@@ -115,6 +115,8 @@ and make accurate predictions.
 
 - Gitpod was used in order to create and develop the workspace that I have worked on.
 
+- Balsamiq was used in order to plan the app pages that have been developed
+
 - Github is used to store the repository and to show the files and progression of the workspace.
 
 - Heroku allows us to deploy the web application.
