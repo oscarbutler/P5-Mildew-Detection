@@ -1,8 +1,16 @@
 # Mildew Detection
 
+https://www.kaggle.com/datasets/codeinstitute/cherry-leaves
+
 ![Healthy Dataset](images/healthy-dataset-sc.png)
 
 ![Powdery Mildew Dataset](images/mildew-dataset-sc.png)
+
+## Dataset
+
+In this dataset that we will recieve from kaggle there are over 4000 images that are healthy leaves and leaves that have been affected by powdery mildew. These images were from Farmy and Foods crop fields.
+
+This project is being made to reduce employees times assessing if a leaf has this fungus. Instead they can get an image and run it through this workspace.
 
 ## Data Collection
 
