@@ -1,16 +1,27 @@
 # Mildew Detection
 
+## Dataset
+
 https://www.kaggle.com/datasets/codeinstitute/cherry-leaves
 
 ![Healthy Dataset](images/healthy-dataset-sc.png)
 
 ![Powdery Mildew Dataset](images/mildew-dataset-sc.png)
 
-## Dataset
+### Business Requirements
 
 In this dataset that we will recieve from kaggle there are over 4000 images that are healthy leaves and leaves that have been affected by powdery mildew. These images were from Farmy and Foods crop fields.
 
+It takes an employee roughly 30 minutes to assess each tree and find out if it has powdery mildew. Then if it does it gets treated with a special compund which will then kill the fungus. The process of applying the compound takes a minute. This is for one tree when Farmy and Foods have thousands across the country.
+
 This project is being made to reduce employees times assessing if a leaf has this fungus. Instead they can get an image and run it through this workspace.
+
+
+The client is interested in developing an app that:
+
+Creates an easy way to visualise the difference between an healthy leaf and a infected one.
+
+To create an accurate prediction on whether the leaf is healthy or not.
 
 ## Data Collection
 
