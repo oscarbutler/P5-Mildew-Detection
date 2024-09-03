@@ -20,23 +20,23 @@ def detector():
 
     image_input = st.file_uploader('Upload Image of Leaf', accept_multiple_files=True)
 
-    if image_input is not None:
+    if images_buffer is not None:
         df_report = pd.DataFrame([])
-        for image in image_input:
+        for image in images_buffer:
 
             img_pil = (Image.open(image))
             st.info(f"Leaf sample: **{image.name}**")
             img_array = np.array(img_pil)
             st.image(img_pil, caption=f"Image Size: {img_array.shape[1]}px width x {img_array.shape[0]}px height")
 
-            version = 'v1'
+            version = '1'
             resized_img = resize_input_image(img=img_pil, version=version)
-            pred_proba, pred_class = model_and_predict(resized_img, version=version)
-            plot_probabilities(pred_proba, pred_class)
+            pred_proba, pred_class = load_model_and_predict(resized_img, version=version)
+            plot_predictions_probabilities(pred_proba, pred_class)
 
-            df_report = df_report.append({"Name":image.name, 'Result': prediction_class },
+            df_report = df_report.append({"Name":image.name, 'Result': pred_class },
                                         ignore_index=True)
-
+        
         if not df_report.empty:
             st.success("Analysis Report")
             st.table(df_report)
