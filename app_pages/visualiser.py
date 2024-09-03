@@ -12,16 +12,17 @@ def visualize_image():
     st.title('Visualiser')
 
     version = 'v1'
+    if st.checkbox("This show the difference between average and variability images"):
+      average_parasite = plt.imread(f"outputs/{version}/avg_var_powdery_mildew.png")
+      average_healthy = plt.imread(f"outputs/{version}/avg_var_healthy.png")
 
-    average_parasite = plt.imread(f"outputs/{version}/avg_var_powdery_mildew.png")
-    average_healthy = plt.imread(f"outputs/{version}/avg_var_healthy.png")
-    average_difference = plt.imread(f"outputs/{version}/avg_diff.png")
+      st.info("This shows the difference between the average powdery mildew and healthy leaves.")
 
-    st.info("This shows the difference between the average powdery mildew and healthy leaves.")
-
-    st.image(average_parasite, caption="Average Of Powdery Mildew Leaves")
-    st.image(average_healthy, caption="Averages Of Healthy Leaves")
-    st.image(average_difference, caption="The average difference")
+      st.image(average_parasite, caption="Average Of Powdery Mildew Leaves")
+      st.image(average_healthy, caption="Averages Of Healthy Leaves")
+    if st.checkbox("Differences between average mildew infected and average leaves affected by powdery mildew"):
+      average_difference = plt.imread(f"outputs/{version}/avg_diff.png")
+      st.image(average_difference, caption="The average difference")
 
 
     if st.checkbox("Image Montage"): 
