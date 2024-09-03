@@ -92,6 +92,12 @@ Validation - powdery_mildew: 210 images
 Test - healthy: 422 images
 Test - powdery_mildew: 422 images
 
+![Image Sets](images/img_sets.png)
+
+![Accuracy](images/accuracy-chart.png)
+
+![Loss](images/loss_chart.png)
+
 ## Business Requirements
 
 - The client wants to be able to visualise the difference between the healthy and powdered mildew leaves.
