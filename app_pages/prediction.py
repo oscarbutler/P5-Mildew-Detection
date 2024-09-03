@@ -18,7 +18,7 @@ def detector():
         f"These images can be downloaded from [kaggle.](https://www.kaggle.com/codeinstitute/cherry-leaves)"
         f" Now they can be used for live predictions.")
 
-    images_buffer = st.file_uploader('Upload Image of Leaf', accept_multiple_files=True)
+    images_buffer = st.file_uploader('Upload Image of Leaf',type=['PNG','JPG','JPEG'] ,accept_multiple_files=True)
 
     if images_buffer is not None:
         df_report = pd.DataFrame([])
