@@ -24,7 +24,7 @@ Powdery mildew is most infectious when in humid weather.
 
 In the kaggle dataset that we collected there are 4208 images of a mixture of healthy leaves and one affected by powdery mildew.
 
-## Visualiser
+## Leaf Visualiser
 
 Business requirements:
 
@@ -34,7 +34,7 @@ Business requirements:
 
 - Image Montage
 
-## Prediction
+## Powdery Mildew Detection
 
 Business requirements:
 
@@ -46,9 +46,13 @@ Business requirements:
 
 - Download button for table.
 
-## Hypothesis
+## Project Hypothesis
 
-## Performance
+Leaves that have been tainted by the fungus have many characteristics that can set them apart compared to healthy ones. These signs are that parts of the leaf will become white. These will continue to grow and can potentially merge together if left for longer durations of time.
+
+The ML model will be able to distinguish between a healthy and an infected cherry leaf with at least 97% accuracy.
+
+## ML Performance Metrics
 
 Train - healthy: 1472 images
 Train - powdery_mildew: 1472 images
