@@ -77,6 +77,8 @@ Business requirements:
 
 - Download button for table.
 
+![Detector Test](images/mildew_test.png)
+
 ## Project Hypothesis
 
 Leaves that have been tainted by the fungus have many characteristics that can set them apart compared to healthy ones. These signs are that parts of the leaf will become white. These will continue to grow and can potentially merge together if left for longer durations of time.
