@@ -16,4 +16,8 @@ def hypothesis_function():
         f"Through the user of our visualise page we can determine the"
         f"biggest differences between a healthy leaf and an"
         f"infected one."
+        f"It also helped us understand that there is no specific pattern"
+        f"in which the powdery mildew starts. We have learnt that it is white"
+        f"but also that the initally break out of the fungus is not consistent"
+        f"in its placement on the leaf."
     )
