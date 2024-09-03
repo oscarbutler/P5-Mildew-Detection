@@ -23,6 +23,9 @@ Creates an easy way to visualise the difference between an healthy leaf and a in
 
 To create an accurate prediction on whether the leaf is healthy or not.
 
+We have recieved the dataset which includes 4208 images and that it is split equally with 2104 being healthy leaves
+and 2104 being infected leaves.
+
 ## Data Collection
 
 In the start of data collection it is crucial to install kaggle. It is important because we need the dataset in order to make a prediction. As well as recieving the dataset in data collection we also need to configure the kaggle.json file.
