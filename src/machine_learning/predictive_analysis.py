@@ -6,17 +6,17 @@ from tensorflow.keras.models import load_model
 from PIL import Image
 from src.data_management import load_pkl_file
 
-def plot_probabilities(probability, prediction_class):
+def plot_probabilities(pred_proba, pred_class):
 
     prob_per_class = pd.DataFrame(
         data=[0, 0],
         index={'healthy': 0, 'powdery_mildew': 1}.keys(),
         columns=['Probability']
     )
-    prob_per_class.loc[prediction_class] = probability
+    prob_per_class.loc[pred_class] = pred_proba
     for x in prob_per_class.index.to_list():
-        if x not in prediction_class:
-            prob_per_class.loc[x] = 1 - probability
+        if x not in pred_class:
+            prob_per_class.loc[x] = 1 - pred_proba
     prob_per_class = prob_per_class.round(3)
     prob_per_class['Diagnostic'] = prob_per_class.index
 
@@ -38,19 +38,17 @@ def resize_input_image(img, version):
 
 def model_and_predict(my_image, version):
 
-    model = load_model(
-        f"outputs/v1/Mildew_Detection_Model.h5")
+    model = load_model(f"outputs/{version}/Mildew_Detection_Model.h5")
 
-    probability = model.predict(my_image)[0, 0]
+    pred_proba = model.predict(my_image)[0, 0]
 
     target_map = {v: k for k, v in {'healthy': 0, 'powdery_mildew': 1}.items()}
-
-    prediction_class = target_map[probability > 0.5]
-    if prediction_class == target_map[0]:
-        probability = 1 - probability
+    pred_class = target_map[pred_proba > 0.5]
+    if pred_class == target_map[0]:
+        pred_proba = 1 - pred_proba
 
     st.write(
         f"The predictive analysis indicates the sample leaf is "
-        f"**{prediction_class.lower()}**")
+        f"**{pred_class.lower()}**")
 
-    return probability, prediction_class
+    return pred_proba, pred_class
