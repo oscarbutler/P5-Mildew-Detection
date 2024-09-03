@@ -39,7 +39,7 @@ def resize_input_image(img, version):
 
 def load_model_and_predict(my_image, version):
 
-    model = load_model(f"outputs/{version}/cherry-leaves-model-h1")
+    model = load_model(f"outputs/{version}/Mildew_Detection_Model.h5")
 
     pred_proba = model.predict(my_image)[0, 0]
 
