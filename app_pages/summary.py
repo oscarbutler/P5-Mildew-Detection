@@ -21,3 +21,12 @@ def summary_function():
         f"and 2104 being infected leaves."
         f"This can be found at [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves)"
     )
+
+    st.success(
+        f"There are two main objectives of this project which the client"
+        f"has asked for and these are to create a way to see"
+        f"both healthy and powder mildew leaves and to be able"
+        f"differentiate the two."
+        f"The other objective is to make an accurate prediction on whether"
+        f"a leaf image is healthy or infected with powdery mildew."
+    )
