@@ -155,4 +155,8 @@ and make accurate predictions.
 
 ## Credits
 
-- I used code I learnt from the [Code Institute Malaria Walkthrough Project](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/07a3964f7a72407ea3e073542a2955bd/29ae4b4c67ed45a8a97bb9f4dcfa714b/) this helped me significantly as I then used the knowledge I received to make this powdery mildew detector.
+- I used code I learnt from the [Code Institute Malaria Walkthrough Project](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/07a3964f7a72407ea3e073542a2955bd/29ae4b4c67ed45a8a97bb9f4dcfa714b/) this helped me significantly as I then used the knowledge I received to make this powdery mildew detector. This project helped me with the bulk of my project.
+
+- The lessons provided by code institute also provided me with the knowledge to create this project.
+
+- I learnt a lot about my knowledge of powdery mildew from [this website](https://www.almanac.com/pest/powdery-mildew)
