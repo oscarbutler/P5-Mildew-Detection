@@ -11,6 +11,10 @@ import random
 def visualize_image():
     st.title('Visualiser')
 
+    st.info(f"This will give you a clear insight into the difference between"
+    f"what a healthy leaf look like and one infected with powdery mildew."
+    f"This will show you the averages of how they both look in a clear distinct way.")
+
     version = 'v1'
     if st.checkbox("This show the difference between average and variability images"):
       average_parasite = plt.imread(f"outputs/{version}/avg_var_powdery_mildew.png")
